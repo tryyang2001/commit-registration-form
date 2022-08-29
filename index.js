@@ -68,6 +68,7 @@ if (regForm) {
       get(child(refdb(database), "users/" + id))
         .then((snapshot) => {
           if (snapshot.exists()) {
+            alert("This email has been used, please try another one");
             console.log("You cannot use this identity to register an account!");
           } else {
             set(refdb(database, `users/${id}`), newUser);
@@ -109,10 +110,12 @@ if (loginForm) {
             alert("Welcome, user!");
             location.href = "./home.html";
           } else {
+            alert("The password is not correct! Please try again");
             console.log("The password is not correct!");
             console.log(snapshot.val());
           }
         } else {
+          alert("The email is not correct, please try again!");
           console.log("The identity does not present!");
         }
       })
