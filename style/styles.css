@@ -1,0 +1,170 @@
+:root {
+  --clr-primary: #191d2b;
+  --clr-secondary: #27ae60;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-grey-0: #f8f8f8;
+  --clr-grey-1: #dbe1e8;
+  --clr-grey-2: #b2becd;
+  --clr-grey-3: #6c7983;
+  --clr-grey-4: #454e56;
+  --clr-grey-5: #2a2e35;
+  --clr-grey-6: #12181b;
+  --clr-nus: #ef7c00;
+  --clr-nus-blue: #003d7c;
+  --clr-red-1: rgb(226, 3, 3);
+  --br-sm-2: 14px;
+  --clr-bg-icon: #dbe1e8;
+  --border-skill: 1px solid white;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 1.05rem;
+  line-height: 2rem;
+  background-color: var(--clr-primary);
+}
+
+.form-title {
+  text-align: center;
+  margin: 4rem;
+  margin-bottom: 3rem;
+  color: var(--clr-secondary);
+  font-weight: 700;
+}
+
+.container {
+  text-align: center;
+}
+.container .reg-form {
+  background-color: var(--clr-nus-blue);
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 1.5rem;
+}
+.container .reg-form .form-group {
+  padding: 1rem;
+}
+.container .reg-form .form-group label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.container .reg-form .form-group label i {
+  font-size: 1.3rem;
+  color: var(--clr-nus);
+}
+.container .reg-form .form-group input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.container .reg-form a {
+  margin-left: 1.5rem;
+}
+.container .form-login {
+  background-color: var(--clr-nus-blue);
+  width: 45%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.container .form-login .form-group {
+  padding: 1rem;
+}
+.container .form-login .form-group label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+.container .form-login .form-group label i {
+  font-size: 1.3rem;
+  color: var(--clr-nus);
+}
+.container .form-login .form-group input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+.container .form-login a {
+  margin-left: 1.5rem;
+}
+
+.homepage {
+  padding: 1.5rem;
+  margin: 1rem;
+}
+.homepage h1,
+.homepage p {
+  text-align: center;
+  color: var(--clr-white);
+}
+.homepage h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--clr-nus);
+  font-weight: 700;
+}
+.homepage .container {
+  border: 4px solid white;
+  border-radius: 1%;
+  padding: 1rem;
+}
+.homepage .container img {
+  width: 50%;
+  height: 70%;
+  border-radius: 5%;
+  margin-bottom: 1.5rem;
+  color: #27ae60;
+}
+.homepage .container h2 {
+  margin-bottom: 0;
+  padding: 1.1rem;
+  color: var(--clr-white);
+}
+.homepage .container h2 span {
+  color: var(--clr-secondary);
+  font-style: italic;
+  font-weight: 400;
+}
+.homepage .container .btn-logout {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+.left-shape {
+  -webkit-clip-path: polygon(83% 0, 0 66%, 41% 100%, 0 100%, 0% 50%, 0 0);
+          clip-path: polygon(83% 0, 0 66%, 41% 100%, 0 100%, 0% 50%, 0 0);
+  background-color: var(--clr-secondary);
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+}
+
+.right-shape {
+  -webkit-clip-path: polygon(100% 0, 100% 72%, 100% 100%, 23% 100%, 100% 29%, 0 0);
+          clip-path: polygon(100% 0, 100% 72%, 100% 100%, 23% 100%, 100% 29%, 0 0);
+  background-color: var(--clr-nus);
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  z-index: -1;
+}/*# sourceMappingURL=styles.css.map */
